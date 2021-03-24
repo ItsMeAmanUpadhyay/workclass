@@ -1,14 +1,25 @@
-//
-//  main.cpp
-//  workclass
-//
-//  Created by Aman Upadhyay on 29/01/21.
-//
+#include<iostream>
+using namespace std;
 
-#include <iostream>
+class sum {
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    public:
+    int a,b;
+    int take_input() {
+        cout<<"Please enter Two numbers = ";
+        cin>>a>>b;
+        return 0;
+    }
+    int do_sum() {
+        return a+b;
+    }
+    void print_output() {
+        cout<<"The sum of "<<a<<" + "<<b<<"= "<<a+b<<endl;
+    }
+};
+int main() {
+    sum obj;
+    obj.take_input();
+    obj.print_output();
     return 0;
 }
